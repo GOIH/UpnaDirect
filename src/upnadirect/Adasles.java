@@ -1,7 +1,5 @@
 package upnadirect;
 
-import java.beans.*;
-import java.io.Serializable;
 class Adasles extends Aseguradora {
     public Adasles(Cliente cliente, Bien bien){
         super(cliente, bien);

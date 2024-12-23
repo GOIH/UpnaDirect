@@ -1,8 +1,7 @@
 package upnadirect;
 
-import java.beans.*;
-import java.io.Serializable;
-class Aseguradora {
+
+private class Aseguradora {
     public double importe;
     public double comision;
     public String nombre;

@@ -1,7 +1,5 @@
 package upnadirect;
 
-import java.beans.*;
-import java.io.Serializable;
 class Mafro extends Aseguradora {
     public Mafro(Cliente cliente, Bien bien){
         super(cliente, bien);

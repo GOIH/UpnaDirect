@@ -1,7 +1,5 @@
 package upnadirect;
 
-import java.beans.*;
-import java.io.Serializable;
 class LineaIndirecta extends Aseguradora {
     public LineaIndirecta(Cliente cliente, Bien bien){
         super(cliente, bien);
