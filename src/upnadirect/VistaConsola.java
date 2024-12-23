@@ -8,30 +8,25 @@ public class VistaConsola implements IVistaAseguradora {
     @Override
     public int solicitarAnoNacimiento() {
         System.out.println("Introduce el año de nacimiento del cliente: ");
-        int ano = scanner.nextInt();
-        return ano;
+        return scanner.nextInt();
     }
 
     @Override
     public double solicitarSalario() {
         System.out.println("Introduce el salario del cliente en euros: ");
-        double salario = scanner.nextDouble();
-        return salario;
+        return scanner.nextDouble();
     }
 
     @Override
     public double solicitarValorBien() {
         System.out.println("Introduce el valor del bien: ");
-        double valor = scanner.nextDouble();
-        return valor;
+        return scanner.nextDouble();
     }
 
     @Override
     public String solicitarTipoBien() {
         System.out.println("Introduce el tipo de bien vehículo o vivienda: ");
-        String saltoDeLinea = scanner.nextLine();
-        String tipo = scanner.nextLine();
-        return tipo;
+        return scanner.nextLine();  // Se obtiene directamente el valor sin necesidad de variable intermedia.
     }
 
     @Override
@@ -54,6 +49,6 @@ public class VistaConsola implements IVistaAseguradora {
         System.out.println(amarillo + mafro.nombre + " | Importe: " + mafro.importe + " | Comisión: " + mafro.comision + reset);
         System.out.println(amarillo + lineaIndirecta.nombre + " | Importe: " + lineaIndirecta.importe + " | Comisión: " + lineaIndirecta.comision + reset);
         System.out.println(amarillo + adasles.nombre + " | Importe: " + adasles.importe + " | Comisión: " + adasles.comision + reset);
-        System.out.println(azul + "La mejor oferta es: " + mejor.nombre + " | " + mejor.importe + " | " + mejor.comision+ reset);
+        System.out.println(azul + "La mejor oferta es: " + mejor.nombre + " | " + mejor.importe + " | " + mejor.comision + reset);
     }
 }

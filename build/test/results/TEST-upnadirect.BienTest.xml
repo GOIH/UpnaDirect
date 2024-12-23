@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="Ordenador-C" name="upnadirect.BienTest" skipped="0" tests="12" time="0.11" timestamp="2024-12-23T12:40:16">
+<testsuite errors="0" failures="0" hostname="Ordenador-C" name="upnadirect.BienTest" skipped="0" tests="12" time="0.137" timestamp="2024-12-23T13:42:32">
   <properties>
     <property name="libs.jsp-compiler.javadoc" value="" />
     <property name="netbeans.autoupdate.country" value="ES" />
@@ -57,7 +57,7 @@
     <property name="libs.j2me_common_ant.maven-pom" value="" />
     <property name="libs.spring-webmvc3.0.maven-pom" value="" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner upnadirect.BienTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Carlos\Desktop\Informática\2º\1er Semestre\Ingeniería del software\UpnaDirect\UpnaDirect\build\test\results\TEST-upnadirect.BienTest.xml crashfile=C:\Users\Carlos\Desktop\Informática\2º\1er Semestre\Ingeniería del software\UpnaDirect\UpnaDirect\build\junitvmwatcher7528933131519807364.properties propsfile=C:\Users\Carlos\Desktop\Informática\2º\1er Semestre\Ingeniería del software\UpnaDirect\UpnaDirect\build\junit2108568909459210369.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner upnadirect.BienTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Carlos\Desktop\Informática\2º\1er Semestre\Ingeniería del software\UpnaDirect\UpnaDirect\build\test\results\TEST-upnadirect.BienTest.xml crashfile=C:\Users\Carlos\Desktop\Informática\2º\1er Semestre\Ingeniería del software\UpnaDirect\UpnaDirect\build\junitvmwatcher6557380989825114953.properties propsfile=C:\Users\Carlos\Desktop\Informática\2º\1er Semestre\Ingeniería del software\UpnaDirect\UpnaDirect\build\junit5785058458659819534.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="build.sysclasspath" value="ignore" />
@@ -405,18 +405,18 @@
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
     <property name="libs.javaee-web-api-7.0.javadoc" value="C:\Program Files\NetBeans 8.2\enterprise\docs\javaee-doc-api.jar" />
   </properties>
-  <testcase classname="upnadirect.BienTest" name="coche_de_mas_de_50000_euros_false" time="0.0" />
-  <testcase classname="upnadirect.BienTest" name="tipo_bien_no_valido_false" time="0.0" />
-  <testcase classname="upnadirect.BienTest" name="coche_de_valor_negativo_false" time="0.0" />
-  <testcase classname="upnadirect.BienTest" name="coche_de_valor_justo_50000_true" time="0.0" />
-  <testcase classname="upnadirect.BienTest" name="vivienda_de_valor_muy_alto_true" time="0.0" />
-  <testcase classname="upnadirect.BienTest" name="coche_de_menos_de_50000_euros_true" time="0.0" />
-  <testcase classname="upnadirect.BienTest" name="vivienda_de_valor_cero_false" time="0.0" />
-  <testcase classname="upnadirect.BienTest" name="vivienda_de_valor_justo_50000_false" time="0.0" />
-  <testcase classname="upnadirect.BienTest" name="vivienda_de_valor_negativo_false" time="0.0" />
-  <testcase classname="upnadirect.BienTest" name="vivienda_de_mas_de_50000_euros_true" time="0.0" />
-  <testcase classname="upnadirect.BienTest" name="vivienda_de_menos_de_50000_euros_false" time="0.0" />
-  <testcase classname="upnadirect.BienTest" name="coche_de_valor_0_true" time="0.0" />
+  <testcase classname="upnadirect.BienTest" name="viviendaDeValorMuyAltoTrue" time="0.006" />
+  <testcase classname="upnadirect.BienTest" name="viviendaDeMenosDe50000EurosFalse" time="0.0" />
+  <testcase classname="upnadirect.BienTest" name="cocheDeValorNegativoFalse" time="0.0" />
+  <testcase classname="upnadirect.BienTest" name="tipoBienNoValidoFalse" time="0.004" />
+  <testcase classname="upnadirect.BienTest" name="viviendaDeValorJusto50000False" time="0.0" />
+  <testcase classname="upnadirect.BienTest" name="cocheDeValor0True" time="0.0" />
+  <testcase classname="upnadirect.BienTest" name="viviendaDeValorCeroFalse" time="0.0" />
+  <testcase classname="upnadirect.BienTest" name="viviendaDeValorNegativoFalse" time="0.0" />
+  <testcase classname="upnadirect.BienTest" name="cocheDeMasDe50000EurosFalse" time="0.0" />
+  <testcase classname="upnadirect.BienTest" name="cocheDeMenosDe50000EurosTrue" time="0.0" />
+  <testcase classname="upnadirect.BienTest" name="cocheDeValorJusto50000True" time="0.0" />
+  <testcase classname="upnadirect.BienTest" name="viviendaDeMasDe50000EurosTrue" time="0.0" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

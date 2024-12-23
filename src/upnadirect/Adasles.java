@@ -12,7 +12,7 @@ class Adasles extends Aseguradora {
         double porcentaje = 0.02;
 
         if (this.bien.getTipo().equalsIgnoreCase("vehículo") &&
-                ((2023 - this.cliente.getAñoNacimiento()) < 20 || (2023 - this.cliente.getAñoNacimiento()) > 60)) {
+                ((2023 - this.cliente.getAnioNacimiento()) < 20 || (2023 - this.cliente.getAnioNacimiento()) > 60)) {
             porcentaje = 0.06;
         }
 

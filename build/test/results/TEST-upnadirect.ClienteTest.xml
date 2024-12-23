@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="Ordenador-C" name="upnadirect.ClienteTest" skipped="0" tests="10" time="0.18" timestamp="2024-12-23T12:40:16">
+<testsuite errors="0" failures="0" hostname="Ordenador-C" name="upnadirect.ClienteTest" skipped="0" tests="10" time="0.192" timestamp="2024-12-23T13:42:32">
   <properties>
     <property name="libs.jsp-compiler.javadoc" value="" />
     <property name="netbeans.autoupdate.country" value="ES" />
@@ -57,7 +57,7 @@
     <property name="libs.j2me_common_ant.maven-pom" value="" />
     <property name="libs.spring-webmvc3.0.maven-pom" value="" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner upnadirect.ClienteTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Carlos\Desktop\Informática\2º\1er Semestre\Ingeniería del software\UpnaDirect\UpnaDirect\build\test\results\TEST-upnadirect.ClienteTest.xml crashfile=C:\Users\Carlos\Desktop\Informática\2º\1er Semestre\Ingeniería del software\UpnaDirect\UpnaDirect\build\junitvmwatcher5572402381433109815.properties propsfile=C:\Users\Carlos\Desktop\Informática\2º\1er Semestre\Ingeniería del software\UpnaDirect\UpnaDirect\build\junit7109939905922677192.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner upnadirect.ClienteTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Carlos\Desktop\Informática\2º\1er Semestre\Ingeniería del software\UpnaDirect\UpnaDirect\build\test\results\TEST-upnadirect.ClienteTest.xml crashfile=C:\Users\Carlos\Desktop\Informática\2º\1er Semestre\Ingeniería del software\UpnaDirect\UpnaDirect\build\junitvmwatcher1366824161366131924.properties propsfile=C:\Users\Carlos\Desktop\Informática\2º\1er Semestre\Ingeniería del software\UpnaDirect\UpnaDirect\build\junit532472155115098794.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="build.sysclasspath" value="ignore" />
@@ -405,16 +405,16 @@
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
     <property name="libs.javaee-web-api-7.0.javadoc" value="C:\Program Files\NetBeans 8.2\enterprise\docs\javaee-doc-api.jar" />
   </properties>
-  <testcase classname="upnadirect.ClienteTest" name="cliente_salario_positivo_true" time="0.01" />
-  <testcase classname="upnadirect.ClienteTest" name="cliente_año_de_nacimiento_mayor_año_actual_false" time="0.07" />
-  <testcase classname="upnadirect.ClienteTest" name="cliente_año_de_nacimiento_entre_1900_y_año_actual_True" time="0.0" />
-  <testcase classname="upnadirect.ClienteTest" name="calcular_edad_de_cliente_nacido_2024_tiene_0_años" time="0.0" />
-  <testcase classname="upnadirect.ClienteTest" name="cliente_salario_negativo_false" time="0.0" />
-  <testcase classname="upnadirect.ClienteTest" name="cliente_salario_cero_false" time="0.0" />
-  <testcase classname="upnadirect.ClienteTest" name="cliente_año_de_nacimiento_menor_1900_false" time="0.0" />
-  <testcase classname="upnadirect.ClienteTest" name="cliente_año_de_nacimiento_negativo_false" time="0.0" />
-  <testcase classname="upnadirect.ClienteTest" name="cliente_año_de_nacimiento_0_false" time="0.0" />
-  <testcase classname="upnadirect.ClienteTest" name="calcular_edad_de_cliente_nacido_2006_tiene_18_años" time="0.0" />
+  <testcase classname="upnadirect.ClienteTest" name="clienteSalarioCeroFalse" time="0.009" />
+  <testcase classname="upnadirect.ClienteTest" name="clienteAnoDeNacimientoMenor1900False" time="0.0" />
+  <testcase classname="upnadirect.ClienteTest" name="calcularEdadDeClienteNacido2024Tiene0Anios" time="0.085" />
+  <testcase classname="upnadirect.ClienteTest" name="clienteAnoDeNacimientoNegativoFalse" time="0.0" />
+  <testcase classname="upnadirect.ClienteTest" name="clienteSalarioPositivoTrue" time="0.0" />
+  <testcase classname="upnadirect.ClienteTest" name="clienteAnoDeNacimiento0False" time="0.0" />
+  <testcase classname="upnadirect.ClienteTest" name="clienteAnoDeNacimientoMayorAnoActualFalse" time="0.0" />
+  <testcase classname="upnadirect.ClienteTest" name="calcularEdadDeClienteNacido2006Tiene18Anios" time="0.0" />
+  <testcase classname="upnadirect.ClienteTest" name="clienteAnoDeNacimientoEntre1900YAnoActualTrue" time="0.0" />
+  <testcase classname="upnadirect.ClienteTest" name="clienteSalarioNegativoFalse" time="0.0" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

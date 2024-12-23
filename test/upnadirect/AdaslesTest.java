@@ -9,7 +9,7 @@ public class AdaslesTest {
         Cliente cliente = new Cliente();
         bien.tipo = "vivienda";
         bien.valor = 120000;
-        cliente.añoNacimiento = 1970;
+        cliente.anioNacimiento = 1970;
         cliente.salarioAnual = 35000;
         Aseguradora adasles = new Adasles(cliente, bien);
         boolean seguro = adasles.calcularImporte() == 2400;
@@ -21,7 +21,7 @@ public class AdaslesTest {
         Cliente cliente = new Cliente();
         bien.tipo = "vivienda";
         bien.valor = 120000;
-        cliente.añoNacimiento = 1970;
+        cliente.anioNacimiento = 1970;
         cliente.salarioAnual = 35000;
         Aseguradora adasles = new Adasles(cliente, bien);
         boolean seguro = adasles.calcularComision() == 120;

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="Ordenador-C" name="upnadirect.AdaslesTest" skipped="0" tests="2" time="0.11" timestamp="2024-12-23T12:40:15">
+<testsuite errors="0" failures="0" hostname="Ordenador-C" name="upnadirect.AdaslesTest" skipped="0" tests="2" time="0.087" timestamp="2024-12-23T13:42:31">
   <properties>
     <property name="libs.jsp-compiler.javadoc" value="" />
     <property name="netbeans.autoupdate.country" value="ES" />
@@ -57,7 +57,7 @@
     <property name="libs.j2me_common_ant.maven-pom" value="" />
     <property name="libs.spring-webmvc3.0.maven-pom" value="" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner upnadirect.AdaslesTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Carlos\Desktop\Informática\2º\1er Semestre\Ingeniería del software\UpnaDirect\UpnaDirect\build\test\results\TEST-upnadirect.AdaslesTest.xml crashfile=C:\Users\Carlos\Desktop\Informática\2º\1er Semestre\Ingeniería del software\UpnaDirect\UpnaDirect\build\junitvmwatcher3024927436805937524.properties propsfile=C:\Users\Carlos\Desktop\Informática\2º\1er Semestre\Ingeniería del software\UpnaDirect\UpnaDirect\build\junit2870122034369747802.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner upnadirect.AdaslesTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Carlos\Desktop\Informática\2º\1er Semestre\Ingeniería del software\UpnaDirect\UpnaDirect\build\test\results\TEST-upnadirect.AdaslesTest.xml crashfile=C:\Users\Carlos\Desktop\Informática\2º\1er Semestre\Ingeniería del software\UpnaDirect\UpnaDirect\build\junitvmwatcher8144511953474349694.properties propsfile=C:\Users\Carlos\Desktop\Informática\2º\1er Semestre\Ingeniería del software\UpnaDirect\UpnaDirect\build\junit9096695382246757963.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="build.sysclasspath" value="ignore" />
@@ -405,8 +405,8 @@
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
     <property name="libs.javaee-web-api-7.0.javadoc" value="C:\Program Files\NetBeans 8.2\enterprise\docs\javaee-doc-api.jar" />
   </properties>
-  <testcase classname="upnadirect.AdaslesTest" name="calcular_importe_vivienda_de_valor_120000_ano_1970_salario_35000_adasles_igual_a_120" time="0.0" />
-  <testcase classname="upnadirect.AdaslesTest" name="calcular_seguro_vivienda_de_valor_120000_ano_1970_salario_35000_adasles_igual_a_2400" time="0.0" />
+  <testcase classname="upnadirect.AdaslesTest" name="calcularImporteViviendaValor120000Ano1970Salario35000AdaslesIgual120" time="0.0" />
+  <testcase classname="upnadirect.AdaslesTest" name="calcularSeguroViviendaValor120000Ano1970Salario35000AdaslesIgual2400" time="0.0" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -11,7 +11,7 @@ public class MafroTest {
         Cliente cliente = new Cliente();
         bien.tipo = "vivienda";
         bien.valor = 120000;
-        cliente.añoNacimiento = 1970;
+        cliente.anioNacimiento = 1970;
         cliente.salarioAnual = 35000;
         Mafro mafro = new Mafro(cliente, bien);
         boolean seguro = mafro.calcularImporte() == 3600;
@@ -23,7 +23,7 @@ public class MafroTest {
         Cliente cliente = new Cliente();
         bien.tipo = "vivienda";
         bien.valor = 120000;
-        cliente.añoNacimiento = 1970;
+        cliente.anioNacimiento = 1970;
         cliente.salarioAnual = 35000;
         Mafro mafro = new Mafro(cliente, bien);
         boolean seguro = mafro.calcularComision() == 108;

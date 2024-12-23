@@ -1,30 +1,28 @@
 package upnadirect;
 
-import java.util.Scanner;
 public class Presentador {
     private IVistaAseguradora vista;
-   
-    
+
     public Presentador(IVistaAseguradora vista){
         this.vista = vista;
     }
-    
+
     public Cliente solicitarCliente(){
         Cliente cliente = new Cliente();
         int ano = vista.solicitarAnoNacimiento();
-        cliente.añoNacimiento = ano;
+        cliente.anioNacimiento = ano;
         double salarioAnual = vista.solicitarSalario();
         cliente.salarioAnual = salarioAnual;
         while(!cliente.esEdadValida() || !cliente.esSalarioValido()){
             vista.errorCliente();
             ano = vista.solicitarAnoNacimiento();
-            cliente.añoNacimiento = ano;
+            cliente.anioNacimiento = ano;
             salarioAnual = vista.solicitarSalario();
-            cliente.salarioAnual= salarioAnual;
+            cliente.salarioAnual = salarioAnual;
         }
         return cliente;
     }
-    
+
     public Bien solicitarBien(){
         Bien bien = new Bien();
         String tipo = vista.solicitarTipoBien();
@@ -40,11 +38,12 @@ public class Presentador {
         }
         return bien;
     }
+
     public void ofrecerOfertaMasVentajosa(Cliente cliente, Bien bien) {
         Aseguradora mafro = new Mafro(cliente, bien);
         Aseguradora lineaIndirecta = new LineaIndirecta(cliente, bien);
         Aseguradora adasles = new Adasles(cliente, bien);
-           
+
         mafro.calcularImporte();
         mafro.calcularComision();
 
@@ -53,7 +52,7 @@ public class Presentador {
 
         adasles.calcularImporte();
         adasles.calcularComision();
-        
+
         if (lineaIndirecta.importe < mafro.importe && lineaIndirecta.importe < adasles.importe) {
             vista.mostrarOfertaEnConsola(mafro, lineaIndirecta, adasles, lineaIndirecta);
         } else if (adasles.importe < mafro.importe && adasles.importe < lineaIndirecta.importe) {
@@ -64,12 +63,11 @@ public class Presentador {
                 vista.mostrarOfertaEnConsola(mafro, lineaIndirecta, adasles, lineaIndirecta);
             } else if (adasles.comision < mafro.comision && adasles.comision < lineaIndirecta.comision) {
                 vista.mostrarOfertaEnConsola(mafro, lineaIndirecta, adasles, adasles);
+            } else {
+                vista.mostrarOfertaEnConsola(mafro, lineaIndirecta, adasles, mafro);
             }
-        else
+        } else {
             vista.mostrarOfertaEnConsola(mafro, lineaIndirecta, adasles, mafro);
         }
-
     }
-
-
 }

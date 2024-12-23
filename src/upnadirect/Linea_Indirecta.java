@@ -15,7 +15,7 @@ class LineaIndirecta extends Aseguradora {
             porcentaje = 0.04;
         } else if (this.bien.getTipo().equalsIgnoreCase("vivienda") && this.bien.getValor() < 150000) {
             porcentaje = 0.04;
-        } else if (this.bien.getTipo().equalsIgnoreCase("vehículo") && (2023 - this.cliente.getAñoNacimiento()) > 60) {
+        } else if (this.bien.getTipo().equalsIgnoreCase("vehículo") && (2023 - this.cliente.getAnioNacimiento()) > 60) {
             porcentaje = 0.06;
         }
 

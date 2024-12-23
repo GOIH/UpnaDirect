@@ -11,7 +11,7 @@ class Mafro extends Aseguradora {
     public double calcularImporte() {
         double porcentaje = 0.03;
 
-        if (this.bien.getTipo().equalsIgnoreCase("vehículo") && (2023 - this.cliente.getAñoNacimiento()) < 20) {
+        if (this.bien.getTipo().equalsIgnoreCase("vehículo") && (2023 - this.cliente.getAnioNacimiento()) < 20) {
             porcentaje = 0.05;
         } else if (this.bien.getTipo().equalsIgnoreCase("vivienda") && this.bien.getValor() > 200000 &&
                 this.cliente.getSalarioAnual() < 20000) {

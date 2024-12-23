@@ -10,7 +10,7 @@ public class LineaIndirectaTest {
         Cliente cliente = new Cliente();
         bien.tipo = "vivienda";
         bien.valor = 120000;
-        cliente.añoNacimiento = 1970;
+        cliente.anioNacimiento = 1970;
         cliente.salarioAnual = 35000;
         LineaIndirecta lineaIndirecta = new LineaIndirecta(cliente, bien);
         boolean seguro = lineaIndirecta.calcularImporte() == 4800;
@@ -22,7 +22,7 @@ public class LineaIndirectaTest {
         Cliente cliente = new Cliente();
         bien.tipo = "vehículo";
         bien.valor = 30000;
-        cliente.añoNacimiento = 2005;
+        cliente.anioNacimiento = 2005;
         cliente.salarioAnual = 150000;
         LineaIndirecta lineaIndirecta = new LineaIndirecta(cliente, bien);
         boolean seguro = lineaIndirecta.calcularImporte() == 900;
@@ -35,7 +35,7 @@ public class LineaIndirectaTest {
         Cliente cliente = new Cliente();
         bien.tipo = "vivienda";
         bien.valor = 120000;
-        cliente.añoNacimiento = 1970;
+        cliente.anioNacimiento = 1970;
         cliente.salarioAnual = 35000;
         LineaIndirecta lineaIndirecta = new LineaIndirecta(cliente, bien);
         boolean seguro = lineaIndirecta.calcularComision() == 192;
@@ -47,7 +47,7 @@ public class LineaIndirectaTest {
         Cliente cliente = new Cliente();
         bien.tipo = "vehículo";
         bien.valor = 30000;
-        cliente.añoNacimiento = 2005;
+        cliente.anioNacimiento = 2005;
         cliente.salarioAnual = 150000;
         LineaIndirecta lineaIndirecta = new LineaIndirecta(cliente, bien);
         boolean seguro = lineaIndirecta.calcularComision() == 9;

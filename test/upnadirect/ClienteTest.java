@@ -8,7 +8,7 @@ public class ClienteTest {
     @Test
     public void clienteAnoDeNacimientoMenor1900False() {
         Cliente cliente = new Cliente();
-        cliente.añoNacimiento = 1890;
+        cliente.anioNacimiento = 1890;
         boolean esEdadValida = cliente.esEdadValida();
         assertFalse(esEdadValida);
     }
@@ -16,7 +16,7 @@ public class ClienteTest {
     @Test
     public void clienteAnoDeNacimientoEntre1900YAnoActualTrue() {
         Cliente cliente = new Cliente();
-        cliente.añoNacimiento = 2005;
+        cliente.anioNacimiento = 2005;
         boolean esEdadValida = cliente.esEdadValida();
         assertTrue(esEdadValida);
     }
@@ -24,21 +24,21 @@ public class ClienteTest {
     @Test
     public void clienteAnoDeNacimientoMayorAnoActualFalse() {
         Cliente cliente = new Cliente();
-        cliente.añoNacimiento = 2078;
+        cliente.anioNacimiento = 2078;
         boolean esEdadValida = cliente.esEdadValida();
         assertFalse(esEdadValida);
     }
     @Test
     public void clienteAnoDeNacimiento0False() {
         Cliente cliente = new Cliente();
-        cliente.añoNacimiento = 0;
+        cliente.anioNacimiento = 0;
         boolean esEdadValida = cliente.esEdadValida();
         assertFalse(esEdadValida);
     }
     @Test
     public void clienteAnoDeNacimientoNegativoFalse() {
         Cliente cliente = new Cliente();
-        cliente.añoNacimiento = -3;
+        cliente.anioNacimiento = -3;
         boolean esEdadValida = cliente.esEdadValida();
         assertFalse(esEdadValida);
     }
@@ -66,14 +66,14 @@ public class ClienteTest {
     @Test
     public void calcularEdadDeClienteNacido2006Tiene18Anios() {
         Cliente cliente = new Cliente();
-        cliente.añoNacimiento = 2006;
+        cliente.anioNacimiento = 2006;
         boolean calcularEdad = cliente.calcularEdad() == 18;
         assertTrue(calcularEdad);
     }
     @Test
     public void calcularEdadDeClienteNacido2024Tiene0Anios() {
         Cliente cliente = new Cliente();
-        cliente.añoNacimiento = 2024;
+        cliente.anioNacimiento = 2024;
         boolean calcularEdad = cliente.calcularEdad() == 0;
         assertTrue(calcularEdad);
     }

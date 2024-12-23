@@ -1,37 +1,38 @@
 package upnadirect;
 
-import java.beans.*;
-import java.io.Serializable;
 import java.time.LocalDate;
+
 class Cliente {
-    int añoNacimiento;
+    int anioNacimiento;
     double salarioAnual;
 
-    public Cliente(int añoNacimiento, double salarioAnual) {
-        this.añoNacimiento = añoNacimiento;
+    public Cliente(int anioNacimiento, double salarioAnual) {
+        this.anioNacimiento = anioNacimiento;
         this.salarioAnual = salarioAnual;
     }
+
     public Cliente() {
-        this.añoNacimiento = 0;
+        this.anioNacimiento = 0;
         this.salarioAnual = 0;
     }
 
-    public int getAñoNacimiento() {
-        return añoNacimiento;
+    public int getAnioNacimiento() {
+        return anioNacimiento;
     }
 
     public double getSalarioAnual() {
         return salarioAnual;
     }
-    public boolean esEdadValida(){
-        return((añoNacimiento >= 1900 && añoNacimiento < LocalDate.now().getYear()));
+
+    public boolean esEdadValida() {
+        return anioNacimiento >= 1900 && anioNacimiento < LocalDate.now().getYear();
     }
-    
-    public boolean esSalarioValido(){
-        return(salarioAnual >= 0);
+
+    public boolean esSalarioValido() {
+        return salarioAnual >= 0;
     }
-    
-    public int calcularEdad(){
-        return(LocalDate.now().getYear() - añoNacimiento);
+
+    public int calcularEdad() {
+        return LocalDate.now().getYear() - anioNacimiento;
     }
 }
