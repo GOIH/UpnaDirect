@@ -25,8 +25,9 @@ public class VistaConsola implements IVistaAseguradora {
 
     @Override
     public String solicitarTipoBien() {
-        System.out.println("Introduce el tipo de bien vehículo o vivienda: ");
-        return scanner.nextLine();  // Se obtiene directamente el valor sin necesidad de variable intermedia.
+        System.out.println("Introduce el tipo del bien: ");
+        String tipo = scanner.next(); // Lee el tipo de bien // Limpiar el salto de línea pendiente
+        return tipo;
     }
 
     @Override

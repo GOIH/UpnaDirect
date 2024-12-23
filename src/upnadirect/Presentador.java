@@ -25,10 +25,10 @@ public class Presentador {
 
     public Bien solicitarBien(){
         Bien bien = new Bien();
-        String tipo = vista.solicitarTipoBien();
-        bien.tipo = tipo;
         double valor = vista.solicitarValorBien();
         bien.valor = valor;
+        String tipo = vista.solicitarTipoBien();
+        bien.tipo = tipo;
         while(!bien.esCorrectoBien()){
             vista.errorBien();
             tipo = vista.solicitarTipoBien();
