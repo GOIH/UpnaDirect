@@ -65,16 +65,16 @@ public class ClienteTest {
         assertTrue(esSalarioValido);
     }
     @Test
-    public void calcular_edad_de_cliente_nacido_2005_tiene_18_años() {
+    public void calcular_edad_de_cliente_nacido_2006_tiene_18_años() {
         Cliente cliente = new Cliente();
-        cliente.añoNacimiento = 2005;
+        cliente.añoNacimiento = 2006;
         boolean calcularEdad = (cliente.calcularEdad() == 18);
         assertTrue(calcularEdad);
     }
     @Test
-    public void calcular_edad_de_cliente_nacido_2023_tiene_0_años() {
+    public void calcular_edad_de_cliente_nacido_2024_tiene_0_años() {
         Cliente cliente = new Cliente();
-        cliente.añoNacimiento = 2023;
+        cliente.añoNacimiento = 2024;
         boolean calcularEdad = (cliente.calcularEdad() == 0);
         assertTrue(calcularEdad);
     }

@@ -57,7 +57,7 @@ public class BienTest {
     @Test
     public void coche_de_mas_de_50000_euros_false() {
         Bien bien = new Bien();
-        bien.tipo = "coche";
+        bien.tipo = "vehiculo";
         bien.valor = 60000;
         boolean esCorrectoBien = bien.esCorrectoBien();
         assertFalse(esCorrectoBien);
@@ -65,7 +65,7 @@ public class BienTest {
     @Test
     public void coche_de_menos_de_50000_euros_true(){
         Bien bien = new Bien();
-        bien.tipo = "coche";
+        bien.tipo = "vehiculo";
         bien.valor = 30000;
         boolean esCorrectoBien = bien.esCorrectoBien();
         assertTrue(esCorrectoBien);
@@ -73,7 +73,7 @@ public class BienTest {
     @Test
     public void coche_de_valor_negativo_false(){
         Bien bien = new Bien();
-        bien.tipo = "coche";
+        bien.tipo = "vehiculo";
         bien.valor = -10;
         boolean esCorrectoBien = bien.esCorrectoBien();
         assertFalse(esCorrectoBien);
@@ -81,7 +81,7 @@ public class BienTest {
     @Test
     public void coche_de_valor_0_true(){
         Bien bien = new Bien();
-        bien.tipo = "coche";
+        bien.tipo = "vehiculo";
         bien.valor = 0;
         boolean esCorrectoBien = bien.esCorrectoBien();
         assertTrue(esCorrectoBien);
@@ -89,7 +89,7 @@ public class BienTest {
     @Test
     public void coche_de_valor_justo_50000_true(){
         Bien bien = new Bien();
-        bien.tipo = "coche";
+        bien.tipo = "vehiculo";
         bien.valor = 50000;
         boolean esCorrectoBien = bien.esCorrectoBien();
         assertTrue(esCorrectoBien);
