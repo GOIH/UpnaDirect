@@ -2,12 +2,11 @@ package upnadirect;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
-import upnadirect.Bien;
 
 public class BienTest {
 
     @Test
-    public void vivienda_de_mas_de_50000_euros_true() {
+    public void viviendaDeMasDe50000EurosTrue() {
         Bien bien = new Bien();
         bien.tipo = "vivienda";
         bien.valor = 60000;
@@ -15,7 +14,7 @@ public class BienTest {
         assertTrue(esCorrectoBien);
     }
     @Test
-    public void vivienda_de_menos_de_50000_euros_false() {
+    public void viviendaDeMenosDe50000EurosFalse() {
         Bien bien = new Bien();
         bien.tipo = "vivienda";
         bien.valor = 30000;
@@ -23,7 +22,7 @@ public class BienTest {
         assertFalse(esCorrectoBien);
     }
     @Test
-    public void vivienda_de_valor_negativo_false() {
+    public void viviendaDeValorNegativoFalse() {
         Bien bien = new Bien();
         bien.tipo = "vivienda";
         bien.valor = -5;
@@ -31,7 +30,7 @@ public class BienTest {
         assertFalse(esCorrectoBien);
     }
     @Test
-    public void vivienda_de_valor_muy_alto_true() {
+    public void viviendaDeValorMuyAltoTrue() {
         Bien bien = new Bien();
         bien.tipo = "vivienda";
         bien.valor = 50000000;
@@ -39,7 +38,7 @@ public class BienTest {
         assertTrue(esCorrectoBien);
     }
     @Test
-    public void vivienda_de_valor_cero_false() {
+    public void viviendaDeValorCeroFalse() {
         Bien bien = new Bien();
         bien.tipo = "vivienda";
         bien.valor = 0;
@@ -47,7 +46,7 @@ public class BienTest {
         assertFalse(esCorrectoBien);
     }
     @Test
-    public void vivienda_de_valor_justo_50000_false() {
+    public void viviendaDeValorJusto50000False() {
         Bien bien = new Bien();
         bien.tipo = "vivienda";
         bien.valor = 50000;
@@ -55,7 +54,7 @@ public class BienTest {
         assertTrue(esCorrectoBien);
     }
     @Test
-    public void coche_de_mas_de_50000_euros_false() {
+    public void cocheDeMasDe50000EurosFalse() {
         Bien bien = new Bien();
         bien.tipo = "vehiculo";
         bien.valor = 60000;
@@ -63,7 +62,7 @@ public class BienTest {
         assertFalse(esCorrectoBien);
     }
     @Test
-    public void coche_de_menos_de_50000_euros_true(){
+    public void cocheDeMenosDe50000EurosTrue(){
         Bien bien = new Bien();
         bien.tipo = "vehiculo";
         bien.valor = 30000;
@@ -71,7 +70,7 @@ public class BienTest {
         assertTrue(esCorrectoBien);
     }
     @Test
-    public void coche_de_valor_negativo_false(){
+    public void cocheDeValorNegativoFalse(){
         Bien bien = new Bien();
         bien.tipo = "vehiculo";
         bien.valor = -10;
@@ -79,7 +78,7 @@ public class BienTest {
         assertFalse(esCorrectoBien);
     }
     @Test
-    public void coche_de_valor_0_true(){
+    public void cocheDeValor0True(){
         Bien bien = new Bien();
         bien.tipo = "vehiculo";
         bien.valor = 0;
@@ -87,7 +86,7 @@ public class BienTest {
         assertTrue(esCorrectoBien);
     }
     @Test
-    public void coche_de_valor_justo_50000_true(){
+    public void cocheDeValorJusto50000True(){
         Bien bien = new Bien();
         bien.tipo = "vehiculo";
         bien.valor = 50000;
@@ -95,7 +94,7 @@ public class BienTest {
         assertTrue(esCorrectoBien);
     }
     @Test
-    public void tipo_bien_no_valido_false() {
+    public void tipoBienNoValidoFalse() {
         Bien bien = new Bien();
         bien.tipo = "novalido";
         bien.valor = 60000;

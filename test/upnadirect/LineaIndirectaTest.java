@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 public class LineaIndirectaTest {
     
     @Test
-    public void calcular_seguro_vivienda_de_valor_120000_ano_1970_salario_35000_linea_indirecta_igual_a_4800() {
+    public void calcularSeguroViviendaValor120000Ano1970Salario35000LineaIndirectaIgual4800() {
         Bien bien = new Bien();
         Cliente cliente = new Cliente();
         bien.tipo = "vivienda";
@@ -13,11 +13,11 @@ public class LineaIndirectaTest {
         cliente.añoNacimiento = 1970;
         cliente.salarioAnual = 35000;
         LineaIndirecta lineaIndirecta = new LineaIndirecta(cliente, bien);
-        boolean seguro = (lineaIndirecta.calcularImporte() == 4800);
+        boolean seguro = lineaIndirecta.calcularImporte() == 4800;
         assertTrue(seguro);
     }
     @Test
-    public void calcular_seguro_coche_de_valor_30000_ano_2005_salario_15000_linea_indirecta_igual_a_900() {
+    public void calcularSeguroCocheValor30000Ano2005Salario15000LineaIndirectaIgual900() {
         Bien bien = new Bien();
         Cliente cliente = new Cliente();
         bien.tipo = "vehículo";
@@ -25,12 +25,12 @@ public class LineaIndirectaTest {
         cliente.añoNacimiento = 2005;
         cliente.salarioAnual = 150000;
         LineaIndirecta lineaIndirecta = new LineaIndirecta(cliente, bien);
-        boolean seguro = (lineaIndirecta.calcularImporte() == 900);
+        boolean seguro = lineaIndirecta.calcularImporte() == 900;
         assertTrue(seguro);
     }
     
     @Test
-    public void calcular_importe_vivienda_de_valor_120000_ano_1970_salario_35000_linea_indirecta_igual_a_192() {
+    public void calcularImporteViviendaValor120000Ano1970Salario35000LineaIndirectaIgual192() {
         Bien bien = new Bien();
         Cliente cliente = new Cliente();
         bien.tipo = "vivienda";
@@ -38,11 +38,11 @@ public class LineaIndirectaTest {
         cliente.añoNacimiento = 1970;
         cliente.salarioAnual = 35000;
         LineaIndirecta lineaIndirecta = new LineaIndirecta(cliente, bien);
-        boolean seguro = (lineaIndirecta.calcularComision() == 192);
+        boolean seguro = lineaIndirecta.calcularComision() == 192;
         assertTrue(seguro);
     }
     @Test
-    public void calcular_comision_coche_de_valor_30000_ano_2005_salario_15000_linea_indirecta_igual_a_9() {
+    public void calcularComisionCocheValor30000Ano2005Salario15000LineaIndirectaIgual9() {
         Bien bien = new Bien();
         Cliente cliente = new Cliente();
         bien.tipo = "vehículo";
@@ -50,7 +50,7 @@ public class LineaIndirectaTest {
         cliente.añoNacimiento = 2005;
         cliente.salarioAnual = 150000;
         LineaIndirecta lineaIndirecta = new LineaIndirecta(cliente, bien);
-        boolean seguro = (lineaIndirecta.calcularComision() == 9);
+        boolean seguro = lineaIndirecta.calcularComision() == 9;
         assertTrue(seguro);
     }
     

@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 public class MafroTest {
     
     @Test
-    public void calcular_seguro_vivienda_de_valor_120000_ano_1970_salario_35000_mafro_igual_a_3600() {
+    public void calcularSeguroViviendaValor120000Ano1970Salario35000() {
         Bien bien = new Bien();
         Cliente cliente = new Cliente();
         bien.tipo = "vivienda";
@@ -14,11 +14,11 @@ public class MafroTest {
         cliente.añoNacimiento = 1970;
         cliente.salarioAnual = 35000;
         Mafro mafro = new Mafro(cliente, bien);
-        boolean seguro = (mafro.calcularImporte() == 3600);
+        boolean seguro = mafro.calcularImporte() == 3600;
         assertTrue(seguro);
     }
     @Test
-    public void calcular_comision_vivienda_de_valor_120000_ano_1970_salario_35000_mafro_igual_a_108() {
+    public void calcularComisionViviendaValor120000Ano1970Salario35000() {
         Bien bien = new Bien();
         Cliente cliente = new Cliente();
         bien.tipo = "vivienda";
@@ -26,7 +26,7 @@ public class MafroTest {
         cliente.añoNacimiento = 1970;
         cliente.salarioAnual = 35000;
         Mafro mafro = new Mafro(cliente, bien);
-        boolean seguro = (mafro.calcularComision() == 108);
+        boolean seguro = mafro.calcularComision() == 108;
         assertTrue(seguro);
     }
     

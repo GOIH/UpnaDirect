@@ -1,7 +1,7 @@
 package upnadirect;
 
 
-private class Aseguradora {
+class Aseguradora {
     public double importe;
     public double comision;
     public String nombre;
